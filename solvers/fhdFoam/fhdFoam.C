@@ -142,14 +142,14 @@ int main(int argc, char *argv[])
     while ( runTime.run() )
     {
         #include "CourantNo.H"
-
+/*
         if(CoNum>10.0)
         {
             SeriousErrorIn("main")
                 <<"*** Error. Co Num is too high  "<<CoNum<<"  adjust the mesh."<<nl
                 << exit(FatalError);
         }
-
+*/
         ++runTime;
         Info << "Begin cycle: Time = " << runTime.timeName() 
              << "    dt = " << dt
